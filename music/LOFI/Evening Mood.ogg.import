@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b58xjly6ccj0r"
+path="res://.godot/imported/Evening Mood.ogg-c7890d1938f612daf546dd97b4437dbb.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/LOFI/Evening Mood.ogg"
+dest_files=["res://.godot/imported/Evening Mood.ogg-c7890d1938f612daf546dd97b4437dbb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxm674ylv4yh7"]
+
+[ext_resource type="Texture2D" uid="uid://c0dkvncn0gy3y" path="res://background/Forest Asset/1. Parallax/0_ Background.png" id="1_pp7ns"]
+[ext_resource type="Texture2D" uid="uid://dphdf1khjny8g" path="res://background/Forest Asset/2. Extra/Color Background.png" id="1_tw5em"]
+[ext_resource type="Texture2D" uid="uid://bv0u4cr8nnghf" path="res://background/Forest Asset/1. Parallax/2_ Trees.png" id="3_kysko"]
+[ext_resource type="Texture2D" uid="uid://ba1vbkyx4bgsi" path="res://background/Forest Asset/1. Parallax/3_ Trees.png" id="4_ggv1h"]
+[ext_resource type="Texture2D" uid="uid://ccclcugmeddj8" path="res://background/Forest Asset/1. Parallax/4_ Trees.png" id="5_r3duh"]
+
+[node name="Bg" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 8)
+texture = ExtResource("1_tw5em")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(400, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(2, 2)
+scale = Vector2(1, 1.11371)
+texture = ExtResource("1_pp7ns")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(-22, 90)
+texture = ExtResource("3_kysko")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(470, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(4, 4)
+texture = ExtResource("4_ggv1h")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(-2, 62)
+texture = ExtResource("5_r3duh")
+centered = false

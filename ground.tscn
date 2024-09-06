@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://qmqpwop0wr6u"]
+
+[ext_resource type="Texture2D" uid="uid://dfo604h5jrfou" path="res://background/Forest Asset/1. Parallax/5_ Floor Platform.png" id="1_glw04"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_86lod"]
+size = Vector2(1335.75, 62.75)
+
+[node name="ground" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 552)
+scale = Vector2(2.57308, 1.68)
+texture = ExtResource("1_glw04")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(669.125, 588.625)
+shape = SubResource("RectangleShape2D_86lod")

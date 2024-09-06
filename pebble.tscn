@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnoucqw6iq7l7"]
+
+[ext_resource type="Texture2D" uid="uid://l5n3cap0y3bv" path="res://sprites/3 Dude_Monster/Rock2.png" id="1_gwgxu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_omd5w"]
+radius = 16.0
+
+[node name="pebble" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_gwgxu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_omd5w")

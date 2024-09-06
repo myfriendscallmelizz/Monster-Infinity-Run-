@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbcis0s20lfko"]
+
+[ext_resource type="FontFile" uid="uid://dq50vxvado8rp" path="res://Font/fonts/PixelOperator8-Bold.ttf" id="1_klafu"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="scorelabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_klafu")
+text = "score: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="startlabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.0
+offset_top = -11.5
+offset_right = 165.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_klafu")
+text = "press space to start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="highscorelabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 0.905882, 0.00784314, 1)
+theme_override_fonts/font = ExtResource("1_klafu")
+text = "highscore:"
+horizontal_alignment = 1
+vertical_alignment = 1

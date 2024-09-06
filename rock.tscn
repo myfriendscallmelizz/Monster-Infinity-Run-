@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://fadlrwdxs58o"]
+
+[ext_resource type="Texture2D" uid="uid://bb1xsa48n3coi" path="res://sprites/1 Pink_Monster/Rock1.png" id="1_mow15"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wt56a"]
+radius = 12.0416
+
+[node name="rock" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_mow15")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wt56a")
